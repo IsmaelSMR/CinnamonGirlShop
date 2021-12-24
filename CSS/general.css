@@ -1,0 +1,29 @@
+:root {
+    /* Variables */
+    --text-color: black;
+    --text-color-inverse: white;
+    --theme-color: white;
+    --primary-color: purple;
+    --secundary-color: yellow;
+}
+
+* {
+    margin: 0;
+    box-sizing: border-box;
+    background: var(--theme-color);
+}
+
+body {
+    height: 100%;
+    padding: 90px 20px;
+    color: var(--text-color);
+    line-height: 1.5;
+	font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+}
+
+@font-face{
+    color: var(--text-color-inverse);
+    font-family: tipografia;
+    src: url(txt/Bacalisties.ttf);
+}

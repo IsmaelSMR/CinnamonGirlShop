@@ -1,0 +1,58 @@
+@media (max-width: 768px) {
+    body {
+        padding-top: 70px;
+    }
+    
+    .header {
+        height: 60px;
+    }
+    
+    .logo {
+        font-size: 25px;
+        padding: 0 20px;
+        line-height: 60px;
+    }
+    
+    .nav-menu {
+        flex-direction: column;
+        align-items: center;
+        list-style: none;
+        background-color: violet;
+        position: fixed;
+        left: 0;
+        top: 60px;
+        width: 100%;
+        padding: 20px 0;
+
+        height: calc(100% - 60px);
+        overflow-y: auto;
+
+        left: 100%;
+        transition: left 0.3s;
+
+    }
+    
+    .nav-menu-item {
+        line-height: 70px;
+    }
+    
+    .nav-menu-link{
+        padding: 9px;
+        border-radius: 0 20% 0 20%;
+    }
+    
+    .nav-menu-link:hover,
+    .nav-menu-link-active {
+        background: none;
+        color: white;
+        transition: 0.5s;
+    }
+
+    .nav-toggle {
+        display: block;
+    }
+
+    .nav-menu_visible {
+        left: 0;
+    }
+  }
