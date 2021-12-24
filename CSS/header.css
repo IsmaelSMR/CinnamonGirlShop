@@ -1,8 +1,7 @@
 .header {
     background-color: var(--primary-color);
-    color: var(--text-color-inverse);
-    height: 80px;
     position: fixed;
+    height: 80px;
     width: 100%;
     top: 0;
     left: 0;
@@ -14,13 +13,6 @@
     justify-content: space-between;
     max-width: 992px;
     margin: 0 auto;
-    background: var(--primary-color);
-    
-}
-
-.navbar-link {
-    color: var(--text-color);
-    text-decoration: none;
 }
 
 .logo {
@@ -28,36 +20,39 @@
     padding: 0 40px;
     line-height: 80px;
     font-family: tipografia;
-    background: var(--primary-color);
     color: var(--text-color-inverse);
+}
 
+/*.navbar-link*/ 
+.navbar a{
+    text-decoration: none;
 }
 
 .nav-menu {
     display: flex;
     margin-right: 40px;
     list-style: none;
-    background: var(--primary-color);
 }
 
-.nav-menu-item {
+/*.nav-menu-item*/
+.nav-menu li {
     font-size: 18px;
     margin: 0 10px;
     line-height: 80px;
     width: max-content;
-    background: var(--primary-color);
 }
 
-.nav-menu-link{
+/*.nav-menu-link*/
+.nav-menu a{
     font-size: 23px;
     color: var(--text-color-inverse);
     padding: 9px;
     border-radius: 0 10%;
-    background: var(--primary-color);
 }
 
-.nav-menu-link:hover,
-.nav-menu-link-active {
+/*nav-menu-link-active isn't in index*/
+.nav-menu a:hover,
+a.nav-menu-link-active {
     color: var(--text-color);
     background-color: var(--theme-color);
     transition: 0.5s;

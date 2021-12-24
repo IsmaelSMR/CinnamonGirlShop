@@ -1,41 +1,49 @@
 main {
   color: var(--text-color);
   font-family: "Poppins", sans-serif;
+  text-align: center;
 }
 
-.container-contact {
-  position: relative;
-  width: 350px;
-  height: 200px;
-}
+/*
+    Baner Styles
+*/
 
-.card {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  transform-style: preserve-3d;
-  transition: all 0.8s ease;
-}
-
-.card:hover {
-  transform: rotateY(180deg);
-}
-
-.img-front {
-  width: 80%;
-  height: 80%;
-}
-
-.img-backcard {
-  background-image: linear-gradient(to left, #800080, black);
-  position: absolute;
-  width: 100%;
-  height: 100%;
+.container-banner {
+  align-items: center;
 }
 
 .start-banner {
   width: 100%;
   height: 500px;
+}
+
+.container-products {
+  align-items: center;
+  /*height: 500px;*/
+}
+
+#contact {
+  display: flex;
+  /*height: 500px;*/
+  justify-content: center;
+}
+
+.container-contact {
+  /*position: relative;*/
+}
+
+/* Card */
+
+.card {
+  width: 350px;
+  height: 200px;
+  transform-style: preserve-3d;
+  transition: all 0.8s ease;
+  color: var(--text-color-inverse);
+}
+
+.card:hover {
+  transform: rotateY(180deg);
 }
 
 .front {
@@ -44,8 +52,13 @@ main {
   height: 100%;
   backface-visibility: hidden;
   background-image: linear-gradient(to left, black, #800080);
-  color: white;
   border-radius: 10px 0;
+}
+
+.img-front {
+    position: relative;
+  width: 80%;
+  height: 80%;
 }
 
 .back {
@@ -54,14 +67,17 @@ main {
   height: 100%;
   backface-visibility: hidden;
   background-image: linear-gradient(to left, #800080, black);
+  border-radius: 0 10px;
   font-family: tipografia;
   font-size: 75px;
-  background-color: purple;
-  color: white;
-  border-radius: 0 10px;
   transform: rotateY(180deg);
+  justify-content: center;
 }
 
 .icon-backcard {
   size: 70%;
+}
+
+.container-aboutme {
+    padding: 20px 100px;
 }

@@ -1,33 +1,30 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
 
-* {
-  margin: auto;
-  padding: 0;
-  box-sizing: border-box;
-  text-align: center;
-}
-.container {
-  max-width: 1170px;
-  margin: auto;
-}
-.row {
-  display: flex;
-  flex-wrap: wrap;
-}
-ul {
-  list-style: none;
-}
-
 .footer {
   position: relative;
   background-color: #222;
   padding: 5px;
   height: 100%;
 }
+
+.container {
+  max-width: 1170px;
+  margin: auto;
+}
+
+.footer-row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  background-color: var(--theme-color);
+}
+
 .footer-col {
   width: 25%;
   padding: 0 15px;
+  text-align: center;
 }
+
 .footer-col h4 {
   font-size: 18px;
   color: black;
@@ -36,9 +33,10 @@ ul {
   font-weight: 500;
   position: relative;
 }
+
 .footer-col h4::before {
-  align-content: center;
   content: "";
+  align-content: center;
   position: absolute;
   left: 0;
   bottom: -10px;
@@ -47,9 +45,14 @@ ul {
   box-sizing: border-box;
   width: 100%;
 }
+
+/*
+I don't know what is this
+
 .footer-col ul li:not(:last-child) {
   margin-bottom: 10px;
 }
+
 .footer-col ul li a {
   font-size: 16px;
   text-transform: capitalize;
@@ -64,21 +67,20 @@ ul {
   color: black;
   padding-left: 8px;
 }
-.footer-col .social-links a {
+*/
+
+.social-links a {
   display: inline-block;
   height: 40px;
   width: 40px;
-  background-color: white;
   margin: 0 10px 10px 0;
-  text-align: center;
   line-height: 40px;
   border-radius: 50%;
-  color: black;
+  color: var(--text-color);
   transition: all 0.5s ease;
 }
-.footer-col .social-links a:hover {
-  color: black;
-  background-color: whitesmoke;
+.social-links a:hover {
+  background-color: var(--secundary-color);
 }
 
 /*responsive*/
